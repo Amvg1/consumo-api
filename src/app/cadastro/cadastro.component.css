@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --main-color: #7fd382bb;
+    --black: #13131a;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #eee;
+}
+
+/* Caixa central */
+.cadastro {
+    background: var(--black);
+    border-radius: 10px;
+    width: 400px;
+    padding: 40px;
+}
+
+/* Títulos */
+.cadastro h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Criar conta com redes */
+.social-media {
+    display: flex;
+    align-content: center;
+}
+.social-media a {
+    text-decoration: none;
+}
+.social-media img {
+    width: 36px;
+    margin-left: 4rem;
+    margin-bottom: 10px;
+}
+.social-media a:first-child img {
+    margin-left: 66px;
+}
+.social-media img:hover {
+    background: grey;
+    border-radius: 15px;
+}
+
+/* Separa as redes das caixas de entradas no cadastro */
+form span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.alternative span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.alternative span::before, .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 130px;
+    bottom: 50%;
+    right: 3px;
+    background: rgba(255, 255, 255, 0.3);
+}
+.alternative span::after {
+    left: 3px;
+}
+
+/* Caixas para entradas */
+.cadastro .box-user {
+    position: relative;
+}
+.cadastro .box-user input {
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.cadastro .box-user label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.cadastro .box-user input:focus~label, .cadastro .box-user input:valid~label {
+    top: -20px;
+    left: 0;
+    color: var(--main-color);
+    font-size: 12px;
+}
+
+/* Retorna ao login */
+.return {
+    font-size: 12px;
+    color: #5b6b8b;
+    float: left;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.btn {
+    background: var(--main-color);
+}

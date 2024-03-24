@@ -1,0 +1,51 @@
+.header {
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+.header a img {
+    height: 6rem;
+}
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    text-decoration: none;
+}
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+.header mat-icon {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.header .icons mat-icon:hover {
+    color: var(--main-color);
+}
+#question-btn {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    color: #ccc;
+    border: var(--border);
+    margin: .3rem;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 2rem;
+}
+#question-btn:hover {
+    background-color: var(--bg);
+    color: var(--main-color);
+}

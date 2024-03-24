@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --main-color: #7fd382bb;
+    --black: #13131a;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #eee;
+}
+
+/* Caixa central */
+.login {
+    background: var(--black);
+    border-radius: 10px;
+    width: 400px;
+    padding: 40px;
+}
+
+/* Títulos */
+.login h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Caixas para entradas */
+.login .box-user {
+    position: relative;
+}
+.login .box-user input {
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.login .box-user label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.login .box-user input:focus~label, .login .box-user input:valid~label
+{
+    top: -20px;
+    left: 0;
+    color: var(--main-color);
+    font-size: 12px;
+}
+
+/* Tag esqueceu senha */
+.forget {
+    font-size: 12px;
+    color: #5b6b8b;
+    float: right;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+/* Segue para cadastro */
+.register {
+    font-size: 12px;
+    color: #5b6b8b;
+    float: left;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    text-decoration: none;
+    text-transform: none;
+}
+
+/* Retorna ao login */
+.return {
+    font-size: 12px;
+    color: #5b6b8b;
+    float: left;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+}
+
+.btn {
+    background: var(--main-color);
+}
