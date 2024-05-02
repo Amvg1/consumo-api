@@ -25,7 +25,7 @@
 }
 
 /* Novidades */
-.novidades mat-grid-list .row {
+.novidades .row {
     display: flex;
     align-items: center;
     background: var(--black);
@@ -59,12 +59,43 @@
 }
 
 /* Destaques */
-.destaques mat-grid-list .box-container {
+/*
+.destaques {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.destaques .box-container {
+    padding: 2px;
+    border-radius: 30px;
+}
+.destaques .box-container .box h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.destaques .box-container .box a {
+    display: flex;
+    justify-content: space-around;
+}
+.destaques .box-container .box .price {
+    color: red;
+    font-size: 30px;
+}
+.destaques .box-container .box .image img {
+    height: 300px;
+    width: 300px;
+}
+.destaques .box-container .box {
+    max-width: 400px;
+}
+*/
+
+.destaques .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 4rem;
     background: var(--black);
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 .destaques .box-container .box {
     padding: 5rem;
@@ -89,6 +120,10 @@
     font-size: 2rem;
     padding: 1rem 0;
 }
+.destaques .box-container .box p {
+    color: #ccc;
+    font-size: 1.5rem;
+}
 .destaques .box-container .box .price {
     color: #fff;
     font-size: 2.5rem;
@@ -111,7 +146,7 @@
 }
 
 /* Produtos */
-.produtos mat-grid-list .box-container {
+.produtos .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 4rem;
@@ -224,7 +259,7 @@
     margin-right: 10rem;
     text-transform: none;
 }
-.contato .container form mat-form-field {
+.contato .container form .inputBox {
     width: 100%;
     display: flex;
     align-items: center;
@@ -235,27 +270,13 @@
     background: var(--bg);
     border: var(--border);
 }
-.contato .container form .inputBox {
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-    max-height: 1rem;
-}
 .contato .container form .inputBox mat-icon {
     color: #ccc;
     font-size: 2rem;
 }
-.contato .container form .inputBox input {
+.contato .container form .inputBox input, textarea {
     width: 100%;
-    padding: 1rem;
-    font-size: 1.7rem;
-    color: #fff;
-    text-transform: none;
-    background: none;
-}
-.contato .container form mat-form-field textarea {
-    width: 100%;
-    padding: 1rem;
+    padding: 2rem;
     font-size: 1.7rem;
     color: #fff;
     text-transform: none;

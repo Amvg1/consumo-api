@@ -2,23 +2,24 @@
     <form class="login">
         <h2>Login</h2>
         <div class="box-user">
-            <input type="text" placeholder="." required>
+            <input type="text" name="Usuário" required [(ngModel)]="usuario">
             <label>Usuário</label>
         </div>
         <div class="box-user">
-            <input type="password" placeholder="." required>
+            <input type="password" name="Senha" required [(ngModel)]="senha">
             <label>Senha</label>
         </div>
         <div>
             <a href="cadastro" class="forget">Esqueceu a senha?</a>
         </div>
-        <a href="inicio" class="btn">
+        <button class="btn" (click)="fazerLogin()">Entrar</button>
+        <!--<a href="menu-restrito" class="btn" (click)="fazerLogin()">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             Entrar
-        </a>
+        </a>-->
         <div>
             <a href="cadastro" class="register">Ainda não é cadastrado? Cadastre-se...</a>
         </div>

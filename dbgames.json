@@ -1,0 +1,46 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "produto": "Jogo 1",
+      "descricao": "Descrição do jogo 1",
+      "foto": "fortnite.png",
+      "preco": 182.99
+    },
+    {
+      "id": "2",
+      "produto": "Jogo 2",
+      "descricao": "Descrição do jogo 2",
+      "foto": "gta.png",
+      "preco": 209.35
+    },
+    {
+      "id": "3",
+      "produto": "Jogo 3",
+      "descricao": "Descrição do jogo 3",
+      "foto": "god-of-war.png",
+      "preco": 159.99
+    },
+    {
+      "id": "ypqYnI7",
+      "produto": "Jogo 4",
+      "descricao": "Descrição do jogo 4",
+      "foto": "minecraft.png",
+      "preco": 87.2
+    },
+    {
+      "id": "JZ3FGRJ",
+      "produto": "Jogo 5",
+      "descricao": "Descrição do jogo 5",
+      "foto": "fifa-street.png",
+      "preco": 99.99
+    },
+    {
+      "id": "OjGQuH2",
+      "produto": "Jogo 6",
+      "descricao": "Descrição do jogo 6",
+      "foto": "rocket league",
+      "preco": 120.9
+    }
+  ]
+}

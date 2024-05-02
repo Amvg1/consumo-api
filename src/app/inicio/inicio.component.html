@@ -11,7 +11,6 @@
 
 <section class="novidades" id="novidades">
     <h1 class="heading"> nossas <span>novidades</span> </h1>
-    <mat-grid-list cols="2">
         <div class="row">
             <div class="image">
                 <img src="./assets/img/oculos vr.jpeg" alt="about-img">
@@ -30,68 +29,25 @@
                 <a href="#" class="btn">saiba mais</a>
             </div>
         </div>
-    </mat-grid-list>
 </section>
 
 <section class="destaques" id="destaques">
     <h1 class="heading"> mais <span>vendidos</span> </h1>
-    <mat-grid-list cols="3">
-        <div class="box-container">
+        <div class="box-container" *ngFor="let produto of produtos">
             <div class="box">
                 <div class="image">
-                    <img src="./assets/img/fortnite.png" alt="menu-1">
+                    <img src="./assets/img/{{produto.foto}}" alt="Jogo 1">
                 </div>
-                <h3>jogo fortnite</h3>
-                <div class="price">R$182,99 <span>R$210.90</span></div>
-                <a href="#" class="btn">Adicionar ao carrinho</a>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/img/gta.png" alt="menu-2">
-                </div>
-                    <h3>jogo grand theft auto v</h3>
-                <div class="price">R$209,35 <span>R$347,99</span></div>
-                <a href="#" class="btn">Adicionar ao carrinho</a>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/img/god-of-war.png" alt="menu-3">
-                </div>
-                <h3>jogo deus da guerra</h3>
-                <div class="price">R$159,99 <span>R$350,60</span></div>
-                <a href="#" class="btn">Adicionar ao carrinho</a>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/img/minecraft.png" alt="menu-4">
-                </div>
-                    <h3>jogo minecraft</h3>
-                <div class="price">R$87,20 <span>R$99,90</span></div>
-                <a href="#" class="btn">Adicionar ao carrinho</a>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/img/fifa-street.png" alt="menu-5">
-                </div>
-                <h3>jogo fifa street</h3>
-                <div class="price">R$99,99 <span>R$129,99</span></div>
-                <a href="#" class="btn">Adicionar ao carrinho</a>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/img/rocket league" alt="menu-6">
-                </div>
-                    <h3>jogo rocket league</h3>
-                <div class="price">R$120,90 <span>R$149,90</span></div>
+                <h3>{{produto.produto}}</h3>
+                <p>{{produto.descricao}}</p>
+                <div class="price">{{produto.preco | currency : 'BRL'}}</div>
                 <a href="#" class="btn">Adicionar ao carrinho</a>
             </div>
         </div>
-    </mat-grid-list>
 </section>
 
 <section class="produtos" id="produtos">
     <h1 class="heading"> nossos <span>produtos</span> </h1>
-    <mat-grid-list cols="3">
         <div class="box-container">
             <div class="box">
                 <div class="icons">
@@ -220,7 +176,6 @@
                 </div>
             </div>
         </div>
-    </mat-grid-list>
 </section>
 
 <section class="contato" id="contato">
@@ -251,19 +206,17 @@
         </div>
         <form action="">
             <h3>Central de Atendimento</h3>
-            <mat-form-field><div class="inputBox">
+            <div class="inputBox">
                 <mat-icon>person</mat-icon>
                 <input type="text" placeholder="nome">
             </div>
-            </mat-form-field>
-            <mat-form-field><div class="inputBox">
+            <div class="inputBox">
                 <mat-icon>email</mat-icon>
                 <input type="email" placeholder="e-mail">
             </div>
-            </mat-form-field>
-            <mat-form-field >
+            <div class="inputBox">
                 <textarea required="required" placeholder="Escreva a sua mensagem..."></textarea>
-            </mat-form-field>
+            </div>
             <input type="submit" value="enviar" class="btn">
         </form>
     </div>
