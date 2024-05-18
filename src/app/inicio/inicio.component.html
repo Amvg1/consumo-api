@@ -11,6 +11,7 @@
 
 <section class="novidades" id="novidades">
     <h1 class="heading"> nossas <span>novidades</span> </h1>
+    <mat-grid-list cols="2">
         <div class="row">
             <div class="image">
                 <img src="./assets/img/oculos vr.jpeg" alt="about-img">
@@ -29,10 +30,12 @@
                 <a href="#" class="btn">saiba mais</a>
             </div>
         </div>
+    </mat-grid-list>
 </section>
 
-<section class="destaques" id="destaques">
+ <section class="destaques" id="destaques">
     <h1 class="heading"> mais <span>vendidos</span> </h1>
+    <div cols="3">
         <div class="box-container" *ngFor="let produto of produtos">
             <div class="box">
                 <div class="image">
@@ -44,10 +47,12 @@
                 <a href="#" class="btn">Adicionar ao carrinho</a>
             </div>
         </div>
-</section>
+    </div>
+ </section>
 
 <section class="produtos" id="produtos">
     <h1 class="heading"> nossos <span>produtos</span> </h1>
+    <mat-grid-list cols="3">
         <div class="box-container">
             <div class="box">
                 <div class="icons">
@@ -176,6 +181,7 @@
                 </div>
             </div>
         </div>
+    </mat-grid-list>
 </section>
 
 <section class="contato" id="contato">
@@ -207,15 +213,15 @@
         <form action="">
             <h3>Central de Atendimento</h3>
             <div class="inputBox">
-                <mat-icon>person</mat-icon>
-                <input type="text" placeholder="nome">
+                <span class="fa fa-user"></span>
+                <input matInput type="text" placeholder="nome">
             </div>
             <div class="inputBox">
-                <mat-icon>email</mat-icon>
-                <input type="email" placeholder="e-mail">
+                <span class="fa fa-envelope"></span>
+                <input matInput type="email" placeholder="e-mail">
             </div>
             <div class="inputBox">
-                <textarea required="required" placeholder="Escreva a sua mensagem..."></textarea>
+                <textarea matInput required="required" placeholder="Escreva a sua mensagem..."></textarea>
             </div>
             <input type="submit" value="enviar" class="btn">
         </form>

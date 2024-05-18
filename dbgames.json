@@ -2,43 +2,43 @@
   "produtos": [
     {
       "id": "1",
-      "produto": "Jogo 1",
-      "descricao": "Descrição do jogo 1",
+      "produto": "Fortnite",
+      "descricao": "Jogo de ação/sobrevivência",
       "foto": "fortnite.png",
       "preco": 182.99
     },
     {
       "id": "2",
-      "produto": "Jogo 2",
-      "descricao": "Descrição do jogo 2",
+      "produto": "Grand Theft Auto V",
+      "descricao": "Jogo de ação/estratégia",
       "foto": "gta.png",
       "preco": 209.35
     },
     {
       "id": "3",
-      "produto": "Jogo 3",
-      "descricao": "Descrição do jogo 3",
+      "produto": "God of War",
+      "descricao": "Jogo de ação/aventura",
       "foto": "god-of-war.png",
       "preco": 159.99
     },
     {
-      "id": "ypqYnI7",
-      "produto": "Jogo 4",
-      "descricao": "Descrição do jogo 4",
+      "id": "HAO3KgZ",
+      "produto": "Minecraft",
+      "descricao": "Jogo de estratégia/aventura",
       "foto": "minecraft.png",
       "preco": 87.2
     },
     {
-      "id": "JZ3FGRJ",
-      "produto": "Jogo 5",
-      "descricao": "Descrição do jogo 5",
+      "id": "l4Qmi-Z",
+      "produto": "Fifa Street",
+      "descricao": "Jogo de futebol de quadra",
       "foto": "fifa-street.png",
       "preco": 99.99
     },
     {
-      "id": "OjGQuH2",
-      "produto": "Jogo 6",
-      "descricao": "Descrição do jogo 6",
+      "id": "mZwVBDL",
+      "produto": "Rocket League",
+      "descricao": "Jogo de futebol de carros",
       "foto": "rocket league",
       "preco": 120.9
     }
